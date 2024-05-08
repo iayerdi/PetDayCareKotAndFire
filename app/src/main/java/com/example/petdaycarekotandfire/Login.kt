@@ -49,6 +49,7 @@ class Login : AppCompatActivity() {
     fun acceder(){
         var mailext = mail.text.toString().trim()
         var psswd = passwd.text.toString().trim()
+        // mail y paswd
         if(mailext.isEmpty()== false && mailext.isBlank() == false && psswd.isEmpty() == false && psswd.isBlank() ==false){
             FirebaseAuth.getInstance().signInWithEmailAndPassword(mailext.toString(),psswd.toString()).addOnCompleteListener {
                 if(it.isSuccessful){
