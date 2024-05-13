@@ -7,7 +7,6 @@
     tools:context=".Login"
     android:gravity="center">
 
-
     <TextView
         android:id="@+id/textViewHead"
         android:layout_width="wrap_content"
@@ -16,7 +15,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="35dp"
-        android:text="Introduce los datos para registrarte o para acceder si ya estas registrado."
+        android:text="@string/introduce_los_datos"
         android:textAlignment="center"
         android:textSize="25sp" />
 
@@ -31,8 +30,9 @@
         android:layout_below="@+id/textViewHead"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:hint="E-mail"
-        android:maxLength="45"/>
+        android:hint="@string/e_mail"
+        android:maxLength="45"
+        />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -44,7 +44,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:ems="10"
-        android:hint="Password (min 6 caracteres)"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:maxLength="20" />
 
@@ -64,7 +64,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
-            android:text="REGISTRAR" />
+            android:text="@string/registrar" />
 
         <Button
             android:id="@+id/buttonAccess"
@@ -75,9 +75,8 @@
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
             android:layout_toRightOf="@+id/buttonRegist"
-            android:text="ACCEDER" />
+            android:text="@string/acceder" />
 
     </RelativeLayout>
-
 
 </RelativeLayout>

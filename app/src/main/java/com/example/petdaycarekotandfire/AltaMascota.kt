@@ -33,10 +33,10 @@ class AltaMascota : AppCompatActivity() {
         editTextNumberPesoAlta = findViewById(R.id.editTextNumberPesoAlta)
         editTextDuennoAlta = findViewById(R.id.editTextDuennoAlta)
         spinnerSexoAlta = findViewById(R.id.spinnerSexoAlta)
-        var buttonAnnadir = findViewById<Button>(R.id.buttonAnnadir)
+        val buttonAnnadir = findViewById<Button>(R.id.buttonAnnadir)
 
 
-        var arraySexo = ArrayList<String>()
+        val arraySexo = ArrayList<String>()
         arraySexo.add("- Seleccionar -")
         arraySexo.add("Macho")
         arraySexo.add("Hembra")

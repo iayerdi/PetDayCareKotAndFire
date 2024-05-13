@@ -7,22 +7,17 @@
     tools:context=".EditarMascota"
     android:padding="5dp">
 
-
-
-
     <RelativeLayout
         android:id="@+id/datosMascota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
 
-
-
         <TextView
             android:id="@+id/textViewEtiquetaNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre de la mascota:"
+            android:text="@string/nombre_de_la_mascota"
             />
 
         <EditText
@@ -31,7 +26,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:hint="(max 15 char)"
+            android:hint="@string/max_15_char"
             android:maxLength="15"
             android:layout_below="@+id/textViewEtiquetaNombre"
             />
@@ -40,7 +35,7 @@
             android:id="@+id/textViewEtiquetaEspecie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Especie de la mascota"
+            android:text="@string/especie_de_la_mascota"
             android:layout_below="@+id/editTextNombreAlta"
             />
 
@@ -50,15 +45,16 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:hint="(max 15 char)"
+            android:hint="@string/max_15_char"
             android:maxLength="15"
             android:layout_below="@+id/textViewEtiquetaEspecie"
             />
+
         <TextView
             android:id="@+id/textViewEtiquetaRaza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Raza"
+            android:text="@string/raza"
             android:layout_below="@+id/editTextEspecieAlta"
             />
 
@@ -68,15 +64,16 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:hint="(max 15 char)"
+            android:hint="@string/max_15_char"
             android:maxLength="15"
-            android:layout_below="@+id/textViewEtiquetaRaza"/>
+            android:layout_below="@+id/textViewEtiquetaRaza"
+            />
 
         <TextView
             android:id="@+id/textViewEtiquetaSexo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sexo"
+            android:text="@string/genero"
             android:layout_below="@+id/editTextNumberPesoAlta"
             />
 
@@ -93,7 +90,7 @@
             android:id="@+id/textViewEtiquetaPeso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Peso (Kg)"
+            android:text="@string/peso_kg"
             android:layout_below="@+id/editTextRazaAlta"
             />
 
@@ -102,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="(max. 5 char)"
+            android:hint="@string/max_5_char"
             android:maxLength="5"
             android:inputType="numberDecimal"
             android:layout_below="@+id/textViewEtiquetaPeso"
@@ -114,7 +111,7 @@
         android:id="@+id/textViewEtiquetaDuenno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre del dueño"
+        android:text="@string/nombre_del_duenno"
         android:layout_toRightOf="@+id/datosMascota"
         android:layout_marginLeft="10dp"
         />
@@ -126,7 +123,7 @@
         android:ems="10"
         android:inputType="text"
         android:text=""
-        android:hint="(max 10 char)"
+        android:hint="@string/max_10_char"
         android:maxLength="15"
         android:layout_below="@+id/textViewEtiquetaDuenno"
         android:layout_alignStart="@+id/textViewEtiquetaDuenno"
@@ -136,7 +133,7 @@
         android:id="@+id/buttonAnnadir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Añadir"
+        android:text="@string/annadir"
         android:textSize="20sp"
         android:padding="10dp"
         android:layout_centerHorizontal="true"

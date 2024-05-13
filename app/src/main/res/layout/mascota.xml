@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
-        android:text="Nombre"
+        android:text="@string/nombre"
         android:textSize="12sp" />
 
     <TextView
@@ -32,7 +32,7 @@
         android:id="@+id/textViewEtiquetaRaza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Raza"
+        android:text="@string/raza"
         android:layout_toRightOf="@+id/textViewEtiquetaNombre"
         android:layout_alignTop="@+id/textViewEtiquetaNombre"
         android:layout_marginLeft="15dp"
@@ -54,7 +54,7 @@
         android:id="@+id/textViewEtiquetaDuenno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dueño"
+        android:text="@string/duenno"
         android:layout_alignTop="@+id/textViewEtiquetaRaza"
         android:layout_centerHorizontal="true"
         android:textSize="12sp"
@@ -79,6 +79,8 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:src="@drawable/anaconda"
-        android:layout_marginEnd="25dp"/>
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="8dp"
+        />
 
 </RelativeLayout>

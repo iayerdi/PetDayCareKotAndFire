@@ -11,7 +11,7 @@
         android:id="@+id/textViewListaVacia"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="No existe ninguna mascota.\n Añade una mascota al listado."
+        android:text="@string/no_existe_ninguna_mascota"
         android:textSize="25sp"
         android:textAlignment="center"
         android:gravity="center"
@@ -21,7 +21,8 @@
     <ListView
         android:id="@+id/listViewMascotas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        />
 
     <ImageButton
         android:id="@+id/imageButtonAddMascota"
@@ -30,6 +31,7 @@
         android:src="@android:drawable/btn_star"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="30dp"/>
+        android:layout_margin="30dp"
+        />
 
 </RelativeLayout>

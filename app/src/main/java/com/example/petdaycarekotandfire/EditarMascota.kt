@@ -118,7 +118,7 @@ class EditarMascota : AppCompatActivity() {
             .delete().addOnCompleteListener {
                 if(it.isSuccessful){
                     Toast.makeText(applicationContext,"Se ha eliminado la mascota correctamente", Toast.LENGTH_SHORT).show()
-                    var i = Intent(applicationContext,ListadoDeMascotas::class.java)
+                    val i = Intent(applicationContext,ListadoDeMascotas::class.java)
                     startActivity(i)
                 }else{
                     alert("No ha sido posible eliminar la mascota.")
@@ -132,7 +132,7 @@ class EditarMascota : AppCompatActivity() {
             .addOnCompleteListener {
                 if(it.isSuccessful){
                     Toast.makeText(applicationContext,"Se ha modificado correctamente", Toast.LENGTH_SHORT).show()
-                    var i = Intent(applicationContext,ListadoDeMascotas::class.java)
+                    val i = Intent(applicationContext,ListadoDeMascotas::class.java)
                     startActivity(i)
                 }else{
                     alert("No ha sido posible modificar la mascota.")
